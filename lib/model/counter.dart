@@ -7,11 +7,11 @@ import 'package:flutter/cupertino.dart';
 // 2. 写一个增加的方法，然后需要调用notifyListeners();这个方法是通知用到Counter对象的widget刷新用的。
 // 3. get方法
 
-class Counter with ChangeNotifier{  // 1
+class CountModel with ChangeNotifier{  // 1
 
   int _count;
 
-  Counter(this._count);
+  CountModel(this._count);
 
   void add(){
     _count++;
@@ -19,6 +19,5 @@ class Counter with ChangeNotifier{  // 1
   }
 
   get count => _count;  // 3
-
 
 }
